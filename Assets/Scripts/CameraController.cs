@@ -3,18 +3,10 @@ using System.Collections;
 
 public class CameraController : MonoBehaviour {
 
-public Rigidbody2D playerRigidbody;
-public Rigidbody2D cameraRigidbody;
+    public Transform player;
 
-    // Use this for initialization
-    void Start () {
-
-	}
-
-
-
-	// Update is called once per frame
-	void Update () {
-    	cameraRigidbody.velocity = playerRigidbody.velocity;
-	}
+    // Update is called once per frame
+    void Update () {
+        transform.position = new Vector3(player.position.x + 6, 0, -10);
+    }
 }

@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
     public float MoveSpeed;
     public float JumpForce;
@@ -21,18 +22,18 @@ public class PlayerController : MonoBehaviour {
 
     private bool isGrounded;
 
-    private bool jump;
+    private bool jump = false;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         MyRigidbody = GetComponent<Rigidbody2D>();
     }
 
     void FixedUpdate()
     {
         isGrounded = IsGrounded();
-
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             jump = true;
         }
@@ -40,7 +41,9 @@ public class PlayerController : MonoBehaviour {
         if (isGrounded && jump)
         {
             isGrounded = false;
+
             MyRigidbody.velocity = new Vector2(MyRigidbody.velocity.x, JumpForce);
+
             jump = false;
         }
 
@@ -48,7 +51,6 @@ public class PlayerController : MonoBehaviour {
             GameObject Tiro01 = (GameObject)Instantiate (Tiro);
             Tiro01.transform.position = Arma.transform.position;
         }
-
     }
 
     // Update is called once per frame
