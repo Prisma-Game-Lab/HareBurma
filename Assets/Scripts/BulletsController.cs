@@ -4,10 +4,12 @@ using System.Collections;
 public class BulletsController : MonoBehaviour {
 
 	float speed;
+
 	    // Use this for initialization
 	    void Start () {
 	        speed = 10f;
 	    }
+
 
 	    // Update is called once per frame
 	    void Update (){

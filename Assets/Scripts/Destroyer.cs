@@ -7,8 +7,7 @@ void OnTriggerEnter2D(Collider2D other)
 {
 				if (other.tag == "Player")
 				{
-            Debug.Break();
-            return;
+        		Application.LoadLevel(Application.loadedLevel);
         }
 
         if (other.gameObject.transform.parent)

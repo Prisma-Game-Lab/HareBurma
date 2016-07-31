@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D5216CED-D623-6C28-A552-34EBAB811F6E}</ProjectGuid>
+    <ProjectGuid>{9BAC0574-8966-518C-A469-BF430F0A36F0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,9 +45,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BulletBomba.cs" />
      <Compile Include="Assets\Scripts\BulletsController.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Destroyer.cs" />
+     <Compile Include="Assets\Scripts\InimigoController.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\ScrollController.cs" />
      <Compile Include="Assets\Scripts\ScrollController2.cs" />

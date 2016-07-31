@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{EC36995C-587C-E65C-56DB-56E270893145}") = "Project Burma 0.6", "Assembly-CSharp.csproj", "{7A6BF9D0-03DC-3084-AD7C-5AF004DCF443}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A6BF9D0-03DC-3084-AD7C-5AF004DCF443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A6BF9D0-03DC-3084-AD7C-5AF004DCF443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A6BF9D0-03DC-3084-AD7C-5AF004DCF443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A6BF9D0-03DC-3084-AD7C-5AF004DCF443}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

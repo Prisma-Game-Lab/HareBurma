@@ -78,4 +78,18 @@ public class PlayerController : MonoBehaviour
         }
         return false;
     }
+
+    void OnTriggerEnter2D(Collider2D obj) {
+
+      if (obj.gameObject.tag == "Tiro Inimigo") {
+          Destroy(gameObject);
+          Application.LoadLevel(Application.loadedLevel);
+      }
+
+      else if(obj.gameObject.tag == "Inimigo")
+      {
+        Destroy(gameObject);
+        Application.LoadLevel(Application.loadedLevel);
+      }
+    }
 }
